@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "canlendar":"../../../components/calendar/index"
+  }
+}

@@ -1,0 +1,29 @@
+<view class="userinfo">
+
+
+  <view class="img">
+  <image src="{{user.tx}}" class="tximg"></image>
+</view>
+<view class="info">
+  <view class="name">
+    {{user.name}}
+  </view>
+  
+</view>
+
+<van-cell-group>
+
+<van-field  disabled="{{user.xh==''?false:true}}" value="{{ xh }}"  placeholder="请绑定学号" label="学号" border="{{ false }}" bind:change="xhChange" />
+
+
+<van-field value="{{ user.name }}"  placeholder="请输入用户名" label="用户名" border="{{ false }}" bind:change="nameChange" />
+
+<van-field value="{{ user.city }}"  placeholder="请输入城市" label="城市" border="{{ false }}" bind:change="cityChange" />
+
+<van-cell title="总累计时长" value="{{user.timesc}}小时"  />
+
+<button style="margin-top:5vh;" class="bu" bindtap="addbook">修改信息</button>
+</van-cell-group>
+
+
+</view>

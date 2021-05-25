@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/dw/login/login",
+    "pages/dw/phb/phb",
+    "pages/dw/index/index",
+    "pages/dw/user/user"
+
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "纸飞机",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "plugins": {
+    "chooseLocation": {
+      "version": "1.0.5",
+      "provider": "wx76a9a06e5b4e693e"
+    }
+  },
+  "tabBar": {
+    "selectedColor": "#ccbe97",
+    "list": [
+      { "iconPath": "images/shouye-no.png",
+        "pagePath": "pages/dw/index/index",
+        "selectedIconPath":"images/shouye.png",
+        "text": "首页"
+      },
+      {"iconPath": "images/user-no.png",
+        "pagePath": "pages/dw/user/user",
+        "selectedIconPath":"images/user.png",
+        "text": "用户"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "usingComponents": {
+    "van-field": "@vant/weapp/field/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index"
+  }
+}

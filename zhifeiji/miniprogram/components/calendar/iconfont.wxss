@@ -1,0 +1,35 @@
+/*微信小程序使用iconfont图标库*/
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1611044608215'); /* IE9 */
+  src: url('iconfont.eot?t=1611044608215#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAANcAAsAAAAAB5AAAAMPAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDMgqCKIF/ATYCJAMUCwwABCAFhG0HTxuSBiMRNmsOipP99fGm2FFdOQi1GXg5lNvS0HBxU1hMK0Olmo8/Im1lWH6rJT+6yiTKsDq/1/Hwtd/rubt3XzaELlVV7Zf1wLKqClVVVGwZlatQQLbjWSLaNADzqcwA6IcJnnPzvz//7py1VUlpTYpG+nB8SAPYGdPvqPD6f1ubdm2hoypZEtvlp2fkn7DC5QO0GTEHfXDMdCmeZ7PNKaMwGnA04AFF5v+T/QNNlH8Yu6Al7icwYZOR2HP3RECXzGGBWKNCCvSMXUoW6sJQMTfFPU0v10u4G/x9fLHoFK0yxx484c6CHe+xH7Oe2/g97CEwptOCLaJihCTWK/VrauQfqSbUz6UdmNAV5X2+v7HgPzfWmKYxTFj/8CiqFMQAUk2BHZzJe4dM4T1MpvJBAJKPzGdJbmAiSjiA47Bwc9AmhCLigncuKN+Hj7+EXLb7e0JIhcGk0Rsdt8R8f5yK3p2G+Gy8V8XJuVmXP2Ke2IfxnTQEzIfHhVts/XdBCLnCADn9Xl8criGVSx3xhSopFL7FaTmOQYyohuW94jnh4NZ3Xxqoo4AOBD8znq+f3+9+VJR57rU5aU27P47bALaQbYQ+mU9Xc2bmsOS7ZXGfoQG88jAfKs/LUygvy3/qg3KoT8rJ3/FRv5CUoDouwRv5PZCnYYGu0Jnx8hkdq1JjmYqWSq5DV4zN8gT8ojZN4JWbF7ybRrx8O8HQLSdQjFnVVl1jQGRiR9BM2gaDbjtM2Gr/4kmL1lWR49jiMoAw5z4UMx5BNecFMrFvoVnxDQZzUWHCoXDNSU+cg3YXwUQxh/QPlHFrbJXuwtQn2r5OJM0KcF8URy4IvSAfemCLMsUEN9hI1YARbuAODsO6ZuiES8zUK1S72PdN1Q95GTeTHbgIJoo5SP+AMm6N11h3hd9/ou3rRBryqpRfFEetg5An6IB88NtOebfyiBtsRNUAI9yAO9BibfkZdNW9SszUUwzwdjEf1TNd+d7ywuYF0lgR5noNU6JGRovBqUVJW1L78zf4k8VVwb32tHRF0tp5iWwyAQA=') format('woff2'),
+  url('iconfont.woff?t=1611044608215') format('woff'),
+  url('iconfont.ttf?t=1611044608215') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1611044608215#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-qianjinxiayige:before {
+  content: "\e804";
+}
+
+.icon-houtui:before {
+  content: "\e604";
+}
+
+.icon-shang:before {
+  content: "\e68a";
+}
+
+.icon-xia:before {
+  content: "\e725";
+}
+

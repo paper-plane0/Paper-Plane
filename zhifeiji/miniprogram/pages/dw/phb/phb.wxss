@@ -1,0 +1,118 @@
+/* miniprogram/pages/dw/phb/phb.wxss */
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #848484;
+}
+
+.an {
+  width: 15rem;
+  height: 2rem;
+  background-color: #ffffff;
+  margin: auto;
+  border-radius: 5rem 5rem 5rem 5rem;
+  border: .2rem solid #ffffff;
+}
+
+.left {
+  width: 50%;
+  line-height: 2rem;
+  text-align: center;
+  float: left;
+}
+
+.chooce {
+  border-radius: 5rem 0 0 5rem;
+  background-color: #848484;
+  color: #ffffff;
+}
+
+.chooce2 {
+  border-radius: 0 5rem 5rem 0;
+  background-color: #848484;
+  color: #ffffff;
+}
+
+.phb {
+  width: 90%;
+  margin: auto;
+  border-radius: .5rem;
+  background-color: #ffffff;
+  min-height: 50vh;
+  margin-top: 1rem;
+}
+
+.table {
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  line-height: 2rem;
+  padding: .5rem;
+}
+.col{
+  color: #f59610;
+}
+
+.q {
+  flex: 1;
+   text-align: center;
+}
+
+.w {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+}
+
+.e {
+  flex: 1;
+}
+.img{
+  width: 2rem;
+  height: 2rem;
+}
+
+.ph{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-items: center;
+  margin-top: 1rem;
+  color: #ffffff;
+  line-height: 1.5rem;
+}
+.p{
+width: 30% ;
+margin: 0 2%;
+}
+
+.img2{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin-left: 1rem;
+}
+
+.img1{
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  margin-left: .5rem;
+}
+.name2{
+  text-align: center;
+
+}
+.name1{
+  text-align: center;
+}
+.name3{
+  text-align: center;
+}
+
+.namecolor{
+  color: #3fac95;
+}
+.bs{
+  color: #ffffff;
+}
