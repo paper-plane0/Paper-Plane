@@ -1,0 +1,14 @@
+<image class="img" style="opacity:{{0.7}}" src="../../../images/bj.jpg">
+</image>
+
+
+<view class="logo">
+  <image class="logoimg" src="../../../images/logo.png">
+  </image>
+</view>
+<view wx:if="{{xhLogin}}">
+  <button bindtap="wechatlogin" class="bu">
+    微信登录
+  </button>
+
+</view>

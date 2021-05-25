@@ -1,0 +1,85 @@
+<view class="home">
+<view class="calendar">
+  <view wx:if="{{title !== ''}}" class="cale-title">
+    {{title}}
+  </view>
+  <view class="cale-content-box">
+    <view class="cale-time">
+      <view hidden="{{!boxStatus}}" class="iconfont icon-houtui left" bindtap="prev"></view>
+      {{date}}
+      <view hidden="{{!boxStatus}}" class="iconfont icon-qianjinxiayige right" bindtap="next"></view>
+    </view>
+    <view class="cale-box" style="height: {{boxStatus ? '640rpx' : '0'}}">
+      <view class="cale-content-week">
+        <view class="week-list">
+          一
+          <view>
+            Mon
+          </view>
+        </view>
+        <view class="week-list">
+          二
+          <view>
+            Tues
+            </view>
+        </view>
+        <view class="week-list">
+          三
+          <view>
+Wednes</view>
+        </view>
+        <view class="week-list">
+          四
+          <view>
+            Thurs</view>
+        </view>
+        <view class="week-list">
+          五
+          <view>
+
+            Fri</view>
+        </view>
+        <view class="week-list">
+          六
+          <view>
+            Sat</view>
+        </view>
+        <view class="week-list">
+          日
+          <view>
+week</view>
+        </view>
+      </view>
+
+      <view class="cale-content-day">
+        <view class="day-list not-this-month" wx:for="{{begin - 1}}" wx:key="item" bindtap="nowMonth"
+          data-index="{{index}}" data-type="{{1}}" data-day="{{prevAllDay - ((begin - 2) - item)}}">
+          {{prevAllDay - ((begin - 2) - item)}}
+        </view>
+
+        <view class="day-list" wx:for="{{allDay}}" wx:key="item" bindtap="nowMonth" data-index="{{index}}"
+          data-type="{{0}}"
+          style="background: {{nowMonth === index ? background : 'none'}};color: {{nowMonth === index ? color : ''}} !important;">
+          <view class="is-width">
+            <view class="is-width">
+              {{item + 1}}
+            </view>
+            <view class="is-width list-title"
+              style="color: {{nowMonth === index ? data[index].chose : data[index].color}}">
+              {{data[index].title}}
+            </view>
+          </view>
+
+        </view>
+
+        <view class="day-list not-this-month" wx:for="{{42 - ((begin - 1) + allDay)}}" wx:key="item" bindtap="nowMonth"
+          data-index="{{index}}" data-type="{{2}}" data-day="{{item + 1}}">
+          {{item + 1}}
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>
+
+</view>

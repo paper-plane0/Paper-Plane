@@ -1,0 +1,38 @@
+.img{
+  width: 180rpx;
+  height: 180rpx;
+  margin: auto;
+  margin-top: 3rem;
+}
+.tximg{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.userinfo{
+  width: 100%;
+  min-height: 100vh;
+}
+.info{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.name{
+  font-size: 1.4rem;
+  margin-bottom:1cm;
+}
+.fu{
+  font-size: 1rem;
+}
+.bu{
+  width: 300rpx;
+  background-color: #ccbe97;
+  color: #FFF;
+  z-index:2;
+  position: absolute;
+  top:450rpx;
+  left: 25%;
+}
