@@ -296,12 +296,6 @@ this.setData({
 
     return Math.floor((endTime - startTime) / 1000 / 60 / 60)
   },
-  fun(t1, t2) {//测试
-    let startTime = new Date(t1); // 开始时间
-    let endTime = new Date(t2); // 结束时间
-
-    return Math.floor((endTime - startTime) / 1000 / 60 / 60)
-  },
   updateuserinfo() {
     db.collection('user')
       .where({
