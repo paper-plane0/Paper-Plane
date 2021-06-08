@@ -1,0 +1,70 @@
+.headimg {
+  width: 100%;
+  height: 20vh;
+  position: relative;
+  z-index: 1;
+}
+
+.rl {
+  width: 90%;
+  height: 820rpx;
+  margin: auto;
+  background-color: #ffffff;
+  z-index: 2;
+  position: absolute;
+  top: 200rpx;
+  margin-left: 5%;
+  border-radius: .5rem;
+  border: 1rpx solid #fbfbfb;
+}
+
+.dk{
+  width: 20%;
+  background-color: #ccbe97;
+  color: #ffffff;
+  border-radius: .5rem;
+  position: absolute;
+  bottom: 8vh;
+    left: 25%;
+    z-index: 5;
+
+}
+
+.hd{
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  top: 1rem;
+  z-index: 8;
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+}
+.tx{
+  width: 4rem;
+  height: 4rem; 
+}
+
+.img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  margin-top: 1.1rem;
+
+}
+
+.info{
+  font-size: 1.1rem;
+  margin-top: 1.4rem;
+
+}
+.infofu{
+  font-size: .9rem;
+}
+.bu{
+  position: absolute;
+  margin-top: 1.2rem;
+  right: 0.2rpx;
+  font-size: 1.1rem;
+  font-weight:bold;
+}
