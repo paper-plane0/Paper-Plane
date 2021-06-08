@@ -9,112 +9,68 @@
     </view>
   </view>
 
-
-
-  <view wx:if="{{lr==true}}">
-    <view class="ph">
-    <view class="p p2">
-    <image class="img2" src="{{li2.tx}}">
-    </image>
-    <view class="name2">
-      {{li2.name}}
-    </view>
-    <view class="name2 namecolor">
-      {{li2.timesc}}<span class="bs">
-          (h)
-      </span>
-    </view>
+  <view wx:if="{{lr==true}}" class="phb">
+    <view class="table">
+      <view class="q">排名</view>
+      <view class="w">姓名</view>
+      <view class="e">累计</view>
     </view>
 
-    <view class="p p1">
-    <image class="img1" src="{{li1.tx}}">
-    </image>
-    <view class="name1">
-      {{li1.name}}
-    </view>
-    <view class="name1 namecolor">
-      {{li1.timesc}}<span class="bs">
-          (h)
-      </span>
-    </view>
-     </view>
-
-    <view class="p p3">
-    <image class="img2" src="{{li3.tx}}">
-    </image>
-    <view class="name3">
-      {{li3.name}}
-    </view>
-    <view class="name3 namecolor">
-      {{li3.timesc}}<span  class="bs">
-          (h)
-      </span>
-    </view>
+    <view class="table {{item.openid==userid?'col':''}}" wx:for="{{userlist}}">
+      <view class="q">{{index+1}}</view>
+      <view class="w">
+        <image class="img" src="{{item.tx}}"></image>
+        {{item.name}}
+      </view>
+      <view class="e">{{item.timesc}}小时</view>
     </view>
   </view>
-  <view class="phb">
-      <view class="table">
-        <view class="q">排名</view>
-        <view class="w">姓名</view>
-        <view class="e">累计</view>
-      </view>
-
-      <view class="table {{item.openid==userid?'col':''}}" wx:for="{{userlist}}">
-        <view class="q">{{index+1}}</view>
-        <view class="w">
-          <image class="img" src="{{item.tx}}"></image>
-          {{item.name}}
-        </view>
-        <view class="e">{{item.timesc}}小时</view>
-      </view>
-    </view>
-  </view>
-
 
 
 
   <view wx:if="{{lr==false}}">
-  <view class="ph">
-    <view class="p p2">
-    <image class="img2" src="{{li2.tx}}">
-    </image>
-    <view class="name2">
-      {{li2.name}}
-    </view>
-    <view class="name2 namecolor">
-      {{li2.timesc}}<span class="bs">
-          (h)
-      </span>
-    </view>
+
+    <view class="ph">
+      <view class="p p2">
+        <image class="img2" src="{{li2.tx}}">
+        </image>
+        <view class="name2">
+          {{li2.name}}
+        </view>
+        <view class="name2 namecolor">
+          {{li2.timesc}}<span class="bs">
+              (h)
+          </span>
+        </view>
+      </view>
+
+      <view class="p p1">
+        <image class="img1" src="{{li1.tx}}">
+        </image>
+        <view class="name1">
+          {{li1.name}}
+        </view>
+        <view class="name1 namecolor">
+          {{li1.timesc}}<span class="bs">
+              (h)
+          </span>
+        </view>
+      </view>
+
+      <view class="p p3">
+        <image class="img2" src="{{li3.tx}}">
+        </image>
+        <view class="name3">
+          {{li3.name}}
+        </view>
+        <view class="name3 namecolor">
+          {{li3.timesc}}<span  class="bs">
+              (h)
+          </span>
+        </view>
+      </view>
     </view>
 
-    <view class="p p1">
-    <image class="img1" src="{{li1.tx}}">
-    </image>
-    <view class="name1">
-      {{li1.name}}
-    </view>
-    <view class="name1 namecolor">
-      {{li1.timesc}}<span class="bs">
-          (h)
-      </span>
-    </view>
-     </view>
-
-    <view class="p p3">
-    <image class="img2" src="{{li3.tx}}">
-    </image>
-    <view class="name3">
-      {{li3.name}}
-    </view>
-    <view class="name3 namecolor">
-      {{li3.timesc}}<span  class="bs">
-          (h)
-      </span>
-    </view>
-    </view>
-  </view>
-  
     <view class="phb">
       <view class="table">
         <view class="q">排名</view>
@@ -131,6 +87,7 @@
         <view class="e">{{item.timesc}}小时</view>
       </view>
     </view>
+
   </view>
 
 
