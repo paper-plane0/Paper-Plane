@@ -2,10 +2,12 @@
 //getApp()获取app实例
 /*在app.js的globalData中定义一个公共对象userInfo，当程序加载时实现自动登录更新userInfo对象内容，供其他页面之用
 */
+
 //在user.js中获取globalData的userinfo
 const userinfo = getApp().globalData.userinfo
 /*
 在开始使用数据库 API 进行增删改查操作之前，需要先获取数据库的引用。以下调用获取默认环境的数据库的引用：
+--------------------------------------------------------------------------------------------
 */
 const db = wx.cloud.database()
 
