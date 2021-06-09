@@ -18,12 +18,7 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onShow(){ //onShow页面显示时调用。
-    this.setData({ //设置data值
-      rx:app.globalData.userinfo.tx,
-      name:app.globalData.userinfo.name
-    })
-  },
+  
   onLoad: function (options) { //onLoad页面加载时调用，可以获取参数，通过options。
     wx.showShareMenu({ //显示当前页面的转发按钮，分享功能
       withShareTicket:true,
