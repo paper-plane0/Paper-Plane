@@ -8,8 +8,6 @@
 .an {
   width: 15rem;
   height: 2rem;
-  background-color: #ffffff;
-  margin: auto;
   border-radius: 5rem 5rem 5rem 5rem;
   border: .2rem solid #ffffff;
 }
@@ -27,11 +25,6 @@
   color: #ffffff;
 }
 
-.chooce2 {
-  border-radius: 0 5rem 5rem 0;
-  background-color: #848484;
-  color: #ffffff;
-}
 
 .phb {
   width: 90%;
@@ -43,7 +36,7 @@
 }
 
 .table {
-  width: 90%;
+  width: 74%;
   margin-left: 5%;
   display: flex;
   line-height: 2rem;
@@ -96,7 +89,6 @@ margin: 0 2%;
 .img1{
   width: 6rem;
   height: 6rem;
-  border-radius: 50%;
   margin-left: .5rem;
 }
 .name2{
