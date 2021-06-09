@@ -46,16 +46,6 @@
   color: #f59610;
 }
 
-.q {
-  flex: 1;
-   text-align: center;
-}
-
-.w {
-  flex: 2;
-  display: flex;
-  flex-direction: row;
-}
 
 .e {
   flex: 1;
