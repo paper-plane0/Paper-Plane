@@ -85,6 +85,11 @@ this.setData({
   clickCanDate:e.detail.date
 })
   },
+  openphb(){//打卡排行榜 测试
+    wx.navigateTo({
+      url: '/pages/dw/phb/phb',
+    })
+  },
 
   dkcli1() {
     //获取当前日期
