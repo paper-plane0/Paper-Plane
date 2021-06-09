@@ -85,7 +85,7 @@ this.setData({
     //获取当前日期
      let nowdate = this.getCurrentDate(1)
     if(nowdate!=this.data.clickCanDate){
-      wx.showToast({
+      wx.showToast({//日期错误提示
         title: '日期选择错误，请选择当天日期',
         icon:'none'
       })
