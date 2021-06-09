@@ -278,16 +278,23 @@ this.setData({
                   })
                 })
             })
-
-
-
-
           that.updateuserinfo()
           that.setData({
             isdk: "签退"
           })
         })
     }
+
+  },
+  updateuserinfo2() { //测试
+    db.collection('user')
+      .where({
+        openid: app.globalData.userinfo.openid
+      })
+      .get()
+      .then(data => {
+        app.globalData.userinfo = data.data[0]
+      })
 
   },
   fun(t1, t2) {
