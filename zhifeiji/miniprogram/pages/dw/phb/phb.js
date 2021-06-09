@@ -1,11 +1,18 @@
 // miniprogram/pages/dw/phb/phb.js
 const db = wx.cloud.database()//初始化数据库对象
 const app = getApp()//通过const app = getApp()实现在本页面获取app.js 定义的属性globalData,即获取全局数据
+//
+
+///
+///
+///
 
 //Page()函数用来注册页面
 Page({
 
   /**
+   *
+   *
    * 页面的初始数据
    */
   data: {
