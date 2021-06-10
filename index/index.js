@@ -319,10 +319,7 @@ this.setData({
     if (sec < 10) sec = "0" + sec;
     var time = "";
     //精确到天
-    if (format == 1) {
-      time = year + "-" + month + "-" + date;
-    }
-    //精确到分钟
+    
     else if (format == 2) {
       time = year + "-" + month + "-" + date + " " + hour + ":" + minu + ":" + sec;
     }
