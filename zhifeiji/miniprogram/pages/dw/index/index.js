@@ -14,28 +14,7 @@ Page({
     lj:'',
     clickCanDate:''
   },
- /*
-  *data: {
-  *date: '',
-  *isdk: "点击签到",
-  *rx:'',
-  *name:"",
-  *lj:'',
-  * clickCanDate:''
-  *},
-  *
-  */
- /*
-  *data: {
-  *date: '',
-  *isdk: "一键签到",//修改按钮文字
-  *rx:'',
-  *name:"",
-  *lj:'',
-  * clickCanDate:''
-  *},
-  *
-  */
+ 
   /**
    * 生命周期函数--监听页面加载
    */
