@@ -32,9 +32,7 @@ Page({
   onLoad: function (options) {
 
     wx.updateShareMenu({//分享给朋友
-      withShareTicket: true,//是否使用带 shareTicket 的转发
-      success () { }//接口调用成功的回调函数
-    })
+   
 
     this.setData({
       userid:app.globalData.userinfo.openid //将数据库中 userid设置为用户的openid
