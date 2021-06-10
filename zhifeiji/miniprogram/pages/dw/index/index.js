@@ -17,7 +17,18 @@ Page({
  /*
   *data: {
   *date: '',
-  *isdk: "签到",//修改按钮文字
+  *isdk: "点击签到",
+  *rx:'',
+  *name:"",
+  *lj:'',
+  * clickCanDate:''
+  *},
+  *
+  */
+ /*
+  *data: {
+  *date: '',
+  *isdk: "一键签到",//修改按钮文字
   *rx:'',
   *name:"",
   *lj:'',
