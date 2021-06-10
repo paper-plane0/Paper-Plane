@@ -45,9 +45,7 @@ Page({
     })
 
   },
-  async wechatlogin() {
-
-
+  async wechatlogin() {//登录函数
 
     let that = this
     await wx.getUserProfile({
@@ -79,10 +77,9 @@ Page({
 
 
   },
+  
   async login() {
     await this.findxs()
-
-
   },
   async findxs() {
     let that = this
@@ -93,7 +90,7 @@ Page({
       success: res => {
         console.log('[云函数] [login] user openid: ', res.result.openid)
         that.data.userinfo.openid = res.result.openid
-        that.setData({
+        that.setData({//查询数据库该用户数据
           userinfo: that.data.userinfo
         })
         db.collection('user')
@@ -103,7 +100,7 @@ Page({
           .get().then(userList=>{
             console.log("getuserlist",userList)
 
-            if(userList.data.length==0){//找不到
+            if(userList.data.length==0){//首次登入未找到用户数据时，添加该用户数据进入云数据库
               db.collection('user')
               .add({
                 data: 
@@ -119,7 +116,7 @@ Page({
                 }
               })
             
-            }else{//找到了
+            }else{//找到了用户数据
               console.log("OK")
               getApp().globalData.userinfo = userList.data[0]
             
@@ -131,7 +128,8 @@ Page({
         console.error('[云函数] [login] 调用失败', err)
         wx.showToast({
           title: '登录失败！',
-          icon: "error"
+          icon: "error",
+          duration: 2000
         })
       }
     })
@@ -157,9 +155,4 @@ Page({
     
   },
   
-  
-
-
-
-
 })
