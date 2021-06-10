@@ -75,6 +75,16 @@
   left: 61px;
 }
 
+.bu6{
+  width: 300rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  color: rgb(245, 242, 81);
+  z-index:3;
+  position: absolute;
+  bottom: 20px;
+}
 .yc{
   width: 80%;
   background-color: #f5cb44;
