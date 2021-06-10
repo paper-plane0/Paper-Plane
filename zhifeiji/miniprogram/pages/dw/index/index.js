@@ -14,7 +14,17 @@ Page({
     lj:'',
     clickCanDate:''
   },
-
+ /*
+  *data: {
+  *date: '',
+  *isdk: "签到",//修改按钮文字
+  *rx:'',
+  *name:"",
+  *lj:'',
+  * clickCanDate:''
+  *},
+  *
+  */
   /**
    * 生命周期函数--监听页面加载
    */
