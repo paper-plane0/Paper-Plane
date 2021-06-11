@@ -288,17 +288,6 @@ this.setData({
     }
 
   },
-  updateuserinfo2() { //测试
-    db.collection('user')
-      .where({
-        openid: app.globalData.userinfo.openid
-      })
-      .get()
-      .then(data => {
-        app.globalData.userinfo = data.data[0]
-      })
-
-  },
   fun(t1, t2) {
     let startTime = new Date(t1); // 开始时间
     let endTime = new Date(t2); // 结束时间
