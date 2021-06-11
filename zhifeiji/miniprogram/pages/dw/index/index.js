@@ -24,8 +24,8 @@ Page({
       name:app.globalData.userinfo.name
     })
   },
-  onLoad: function (options) { //onLoad页面加载时调用，可以获取参数，通过options。
-    wx.showShareMenu({ //显示当前页面的转发按钮，分享功能
+  onLoad: function (options) { 
+    wx.showShareMenu({ 
       withShareTicket:true,
       menu:['shareAppMessage','shareTimeline']
     })
