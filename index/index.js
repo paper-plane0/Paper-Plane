@@ -303,7 +303,7 @@ this.setData({
 
   },
   getCurrentDate(format) {
-    var now = new Date();
+    var now = new Date();//日期
     var year = now.getFullYear(); //得到年份
     var month = now.getMonth();//得到月份
     var date = now.getDate();//得到日期
