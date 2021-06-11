@@ -213,9 +213,6 @@ this.setData({
   //点击打卡
   async dkcli2() {//async/await 异步调用
 
-
-
-
     let that = this
     let date = await this.getCurrentDate(2)
     if (this.data.isdk == "签到") {
@@ -291,17 +288,6 @@ this.setData({
     }
 
   },
-  updateuserinfo2() { //测试
-    db.collection('user')
-      .where({
-        openid: app.globalData.userinfo.openid
-      })
-      .get()
-      .then(data => {
-        app.globalData.userinfo = data.data[0]
-      })
-
-  },
   fun(t1, t2) {
     let startTime = new Date(t1); // 开始时间
     let endTime = new Date(t2); // 结束时间
@@ -318,6 +304,12 @@ this.setData({
         app.globalData.userinfo = data.data[0]
       })
 
+  },
+  fun123(t1, t2) {
+    let startTime = new Date(t1); // 开始时间
+    let endTime = new Date(t2); // 结束时间
+
+    return Math.floor((endTime - startTime) / 1000 / 60 / 60)
   },
   getCurrentDate(format) {
     var now = new Date();
