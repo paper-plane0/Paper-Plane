@@ -1,4 +1,4 @@
-<image class="img" style="opacity:{{0.7}}" src="../../../images/nbj.jpg">
+<image class="img" style="opacity:{{0.7}}" src="../../../images/bj.jpg">
 </image>
 
 
@@ -11,7 +11,4 @@
     微信登录
   </button>
 
-</view>
-<view class='bu5'>
-开发团队:教练喊我们去搬砖
 </view>

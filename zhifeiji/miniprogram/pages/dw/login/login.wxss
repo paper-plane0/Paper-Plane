@@ -8,12 +8,11 @@
 .logo{
   width: 200rpx;
   height: 200rpx;
-  border-radius: 60%;
+  border-radius: 50%;
   position: absolute;
   left:calc( 50% - 100rpx);
-  top: 400rpx;
+  top: 200rpx;
   z-index:2;
-  text-align: center;
 
 }
 .logoimg{
@@ -22,12 +21,12 @@
   border-radius: 50%;
 }
 .bu{
-  width: 400rpx;
+  width: 300rpx;
   background-color: #ccbe97;
   color: #FFF;
   z-index:2;
   position: absolute;
-  top:1000rpx;
+  top:500rpx;
   left: 25%;
 }
 
@@ -61,20 +60,6 @@
   top:300rpx;
   left: 25%;
 }
-
-.bu5{
-  width: 500rpx;
-  height: 100rpx;
-  line-height: 100rpx;
-  text-align: center;
-  color: #FFF;
-  margin: auto;
-  z-index:2;
-  position: absolute;
-  bottom: 20px;
-  left: 61px;
-}
-
 .yc{
   width: 80%;
   background-color: #f5cb44;
