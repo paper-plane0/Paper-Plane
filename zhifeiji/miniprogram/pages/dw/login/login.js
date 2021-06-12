@@ -52,7 +52,7 @@ Page({
       desc: '展示用户信息', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
       success: (res) => {
         console.log(res)
-        that.data.userinfo = {//赋予用户信息
+        that.data.userinfo = {
           ...that.data.userinfo, name: res.userInfo.nickName,
           city: res.userInfo.city,
           tx: res.userInfo.avatarUrl,
@@ -93,11 +93,11 @@ Page({
         that.setData({//查询数据库该用户数据
           userinfo: that.data.userinfo
         })
-        db.collection('user')//查询用户唯一openid
+        db.collection('user')
           .where({
             openid: this.data.userinfo.openid
           })
-          .get().then(userList=>{//返回用户数据
+          .get().then(userList=>{
             console.log("getuserlist",userList)
 
             if(userList.data.length==0){//首次登入未找到用户数据时，添加该用户数据进入云数据库
@@ -125,8 +125,8 @@ Page({
           })
       },
       fail: err => {
-        console.error('[云函数] [login] 调用失败', err)//云函数调用失败，返回报错提示
-        wx.showToast({//提示框模型
+        console.error('[云函数] [login] 调用失败', err)
+        wx.showToast({
           title: '登录失败！',
           icon: "error",
           duration: 2000
