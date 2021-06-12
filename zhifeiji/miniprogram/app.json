@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/dw/shouye/shouye",
     "pages/dw/login/login",
     "pages/dw/phb/phb",
     "pages/dw/index/index",
@@ -28,6 +29,11 @@
     "selectedColor": "#ccbe97",
     "list": [
       { "iconPath": "images/shouye-no.png",
+        "pagePath": "pages/dw/shouye/shouye",
+        "selectedIconPath":"images/shouye.png",
+        "text": "开始"
+      },
+      { "iconPath": "images/shouye-no.png",
         "pagePath": "pages/dw/index/index",
         "selectedIconPath":"images/shouye.png",
         "text": "首页"
@@ -37,6 +43,8 @@
         "selectedIconPath":"images/user.png",
         "text": "用户"
       }
+
+
     ]
   },
   "sitemapLocation": "sitemap.json",

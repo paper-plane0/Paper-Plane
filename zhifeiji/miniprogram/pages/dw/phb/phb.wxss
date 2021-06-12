@@ -35,6 +35,7 @@
 
 .phb {
   width: 90%;
+  /* height: 112px; */
   margin: auto;
   border-radius: .5rem;
   background-color: #ffffff;
@@ -44,10 +45,11 @@
 
 .table {
   width: 90%;
-  margin-left: 50%;
-  margin-top: 350%;
+  /* margin-left: 50%; */
+  /* margin-top: 350%; */
   line-height: 2rem;
   padding: .5rem;
+  display: flex;
 }
 .col{
   color: #f59610;
@@ -60,7 +62,6 @@
 
 .w {
   flex: 2;
-  display: flex;
   flex-direction: row;
 }
 

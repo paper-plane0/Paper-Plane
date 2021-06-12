@@ -1,0 +1,61 @@
+
+.table {
+  line-height: 3rem;
+  padding: 2rem;
+  font-size: 40rpx;
+}
+.q {
+  flex: 1;
+  margin-top: 60%;
+}
+
+.w {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  margin-left: 20%;
+}
+
+.e {
+  flex: 1;
+  margin-left: 40%;
+}
+.logo{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  position: absolute;
+  left:calc( 50% - 100rpx);
+  top: 150rpx;
+  z-index:2;
+
+}
+.logoimg{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.logoimgb{
+  width: 800rpx;
+  height: 1500rpx;
+  position: absolute;
+  z-index:1;
+}
+.under{
+  height: 40%;
+  padding-top: 5%;
+  z-index:2;
+}
+
+.bu{
+  width: 300rpx;
+  background-color: hsl(207, 34%, 70%);
+  color: #FFF;
+  z-index:2;
+  position: absolute;
+  top:500rpx;
+  margin-top: 45%;
+  left: 25%;
+}
+
+

@@ -8,13 +8,13 @@ Page({
    */
   data: {
     date: '',
-    isdk: "签到",//修改按钮文字
+    isdk: "签到",
     rx:'',
     name:"",
     lj:'',
     clickCanDate:''
   },
- 
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -24,8 +24,8 @@ Page({
       name:app.globalData.userinfo.name
     })
   },
-  onLoad: function (options) { 
-    wx.showShareMenu({ 
+  onLoad: function (options) { //onLoad页面加载时调用，可以获取参数，通过options。
+    wx.showShareMenu({ //显示当前页面的转发按钮，分享功能
       withShareTicket:true,
       menu:['shareAppMessage','shareTimeline']
     })
@@ -47,9 +47,10 @@ Page({
             .get().then(res=>{//查询数据库记录
               
               res.data.forEach(sj=>{
-                //console.log(res)
+                console.log(res)
                 if(sj.time){
                   s=parseInt(s)+parseInt(sj.time)
+                  console.log(sj.time);
                 }
               })
               that.setData({
@@ -63,11 +64,6 @@ Page({
               })
             })
    console.log(app.globalData.userinfo.dateid)
-   openphb123(){//打卡排行榜
-    wx.navigateTo({
-      url: '/pages/dw/phb/phb',
-    })
-  },
     if (app.globalData.userinfo.dateid) {//判断dateid值变换打卡和签退
       this.setData({
         isdk: "签退"
@@ -90,12 +86,6 @@ this.setData({
   clickCanDate:e.detail.date
 })
   },
-  openphb(){//打卡排行榜 测试
-    wx.navigateTo({
-      url: '/pages/dw/phb/phb',
-    })
-  },
-  
 
   dkcli1() {
     //获取当前日期
@@ -219,6 +209,9 @@ this.setData({
   //点击打卡
   async dkcli2() {//async/await 异步调用
 
+
+
+
     let that = this
     let date = await this.getCurrentDate(2)
     if (this.data.isdk == "签到") {
@@ -286,6 +279,10 @@ this.setData({
                   })
                 })
             })
+
+
+
+
           that.updateuserinfo()
           that.setData({
             isdk: "签退"
@@ -311,7 +308,6 @@ this.setData({
       })
 
   },
-
   getCurrentDate(format) {
     var now = new Date();
     var year = now.getFullYear(); //得到年份

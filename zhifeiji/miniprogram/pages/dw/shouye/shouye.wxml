@@ -1,0 +1,20 @@
+<!--index.wxml-->
+
+
+<view class="logo">
+  <image class="logoimg" src="../../../images/logo.png">
+  </image>
+</view>
+<image class="logoimgb" style="opacity:{{0.6}}" src="../../../images/b.jpg"></image>
+<view class="table">
+        <view class="q">每天打卡，养成习惯</view>
+        <view class="w">打卡日历，每日更新</view>
+        <view class="e">加油努力，万事顺利</view>
+      </view>
+
+<view class="under">
+  <button bindtap="wechat" class="bu">
+    开始我的打卡
+  </button>
+  </view>
+
