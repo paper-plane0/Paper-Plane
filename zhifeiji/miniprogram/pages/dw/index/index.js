@@ -63,6 +63,11 @@ Page({
               })
             })
    console.log(app.globalData.userinfo.dateid)
+   openphb123(){//打卡排行榜
+    wx.navigateTo({
+      url: '/pages/dw/phb/phb',
+    })
+  },
     if (app.globalData.userinfo.dateid) {//判断dateid值变换打卡和签退
       this.setData({
         isdk: "签退"
@@ -90,6 +95,7 @@ this.setData({
       url: '/pages/dw/phb/phb',
     })
   },
+  
 
   dkcli1() {
     //获取当前日期
