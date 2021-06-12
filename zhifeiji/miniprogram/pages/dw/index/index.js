@@ -305,12 +305,7 @@ this.setData({
       })
 
   },
-  fun123(t1, t2) {
-    let startTime = new Date(t1); // 开始时间
-    let endTime = new Date(t2); // 结束时间
 
-    return Math.floor((endTime - startTime) / 1000 / 60 / 60)
-  },
   getCurrentDate(format) {
     var now = new Date();
     var year = now.getFullYear(); //得到年份
